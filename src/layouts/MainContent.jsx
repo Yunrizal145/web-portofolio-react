@@ -7,7 +7,7 @@ import Skills from "../sections/Skills";
 const MainContent = () => {
 	return (
 		<div className="mx-auto">
-			<section className="w-full pt-40 lg:pt-32 pb-48 ">
+			<section className="w-full pt-28 lg:pt-60 pb-48 ">
 				<Home />
 			</section>
 			<div className="w-full bg-white pb-20">

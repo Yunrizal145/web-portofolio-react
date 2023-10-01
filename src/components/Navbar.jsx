@@ -33,7 +33,7 @@ const Navbar = () => {
 					<li className="group">
 						<a
 							href="#"
-							className="mx-4 flex py-3 text-white text-xl font-bold lg:text-base hover:text-[#FF4495]"
+							className="mx-4 flex py-3 text-white text-xl font-bold lg:text-2xl hover:text-[#FF4495] hover:-translate-y-1 hover:duration-500"
 						>
 							Home
 						</a>
@@ -41,7 +41,7 @@ const Navbar = () => {
 					<li className="group">
 						<a
 							href="#about"
-							className="mx-4 flex py-3 text-white text-xl font-bold lg:text-base hover:text-[#FF4495]"
+							className="mx-4 flex py-3 text-white text-xl font-bold lg:text-2xl hover:text-[#FF4495] hover:-translate-y-1 hover:duration-500"
 						>
 							About
 						</a>
@@ -49,7 +49,7 @@ const Navbar = () => {
 					<li className="group">
 						<a
 							href="#skills"
-							className="mx-4 flex py-3 text-white text-xl font-bold lg:text-base hover:text-[#FF4495]"
+							className="mx-4 flex py-3 text-white text-xl font-bold lg:text-2xl hover:text-[#FF4495] hover:-translate-y-1 hover:duration-500"
 						>
 							Skills
 						</a>
@@ -57,7 +57,7 @@ const Navbar = () => {
 					<li className="group">
 						<a
 							href="#portfolio"
-							className="mx-4 flex py-3 text-white text-xl font-bold lg:text-base hover:text-[#FF4495]"
+							className="mx-4 flex py-3 text-white text-xl font-bold lg:text-2xl hover:text-[#FF4495] hover:-translate-y-1 hover:duration-500"
 						>
 							Portofolio
 						</a>
@@ -65,7 +65,7 @@ const Navbar = () => {
 					<li className="group">
 						<a
 							href="#contact"
-							className="mx-4 flex py-3 text-white text-xl font-bold lg:text-base hover:text-[#FF4495]"
+							className="mx-4 flex py-3 text-white text-xl font-bold lg:text-2xl hover:text-[#FF4495] hover:-translate-y-1 hover:duration-500"
 						>
 							Contact
 						</a>

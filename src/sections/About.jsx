@@ -22,22 +22,22 @@ const About = () => {
 					<img
 						src={profilePicture}
 						alt="Profile Picture"
-						className="w-96 h-96"
+						className="w-80 h-80 lg:w-[500px] lg:h-[500px]"
 					/>
 				</div>
 
 				{/* Profile */}
 				<div className="mx-10 lg:-mx-0 lg:w-1/2 pt-14 lg:pr-20 text-justify">
-					<h2 className="text-2xl font-bold ">
+					<h2 className="text-2xl lg:text-4xl font-bold ">
 						I`am <span className="text-[#00095D]">{name}</span>
 					</h2>
-					<h3 className="text-xl font-bold pt-3 pb-6">
+					<h3 className="text-xl lg:text-3xl font-bold pt-3 pb-6">
 						A{" "}
 						<span className="text-[#00095D]">
 							{role[0]}😎, Indonesian
 						</span>
 					</h3>
-					<p className="text-sm ">{description[1]}</p>
+					<p className="text-sm lg:text-lg">{description[1]}</p>
 					<div className="w-full h-1 bg-[#FF4495] rounded-full my-6"></div>
 
 					{/* About Experience */}
@@ -45,7 +45,7 @@ const About = () => {
 						{aboutExperiences.map(({ number, title }, index) => (
 							<div
 								key={index}
-								className="w-52 px-6 py-14 lg:py-8 font-bold rounded-3xl bg-[#00095d] bg-opacity-60 border-[#00095d] border-b-4 border-r-4 shadow-2xl hover:bg-[#ff4495]"
+								className="w-52 px-6 py-14 lg:py-8 lg:px-8 font-bold rounded-3xl bg-[#00095d] bg-opacity-60 border-[#00095d] border-b-4 border-r-4 shadow-2xl hover:bg-[#ff4495]"
 							>
 								<h2 className="text-xl">{number} +</h2>
 								<div className="flex justify-center items-center mb-4 mt-1">
@@ -60,7 +60,7 @@ const About = () => {
 					<div className="mt-10 flex justify-center lg:justify-start">
 						<a
 							href="#"
-							className="btn-contact px-6 py-3 text-[#f6f9fc] text-base bg-[#FF4495] rounded-2xl duration-500 hover:bg-[#00095d]  hover:border-r-2 hover:border-b-2 hover:border-[#FF4495] hover:shadow-md hover:shadow-[#FF4495]"
+							className="btn-contact px-6 py-3 text-[#f6f9fc] text-base bg-[#FF4495] rounded-2xl duration-500 lg:text-xl hover:bg-[#00095d]  hover:border-r-2 hover:border-b-2 hover:border-[#FF4495] hover:shadow-md hover:shadow-[#FF4495]"
 						>
 							Lets Talk
 							<FontAwesomeIcon

@@ -9,7 +9,7 @@ export const identity = {
     name: "Hammad Yunrizal Aushaf",
     role: ["Frontend Developer", "Backend Developer", "Software Developer"],
     description: [
-        "I can create an amazing website for your business, Intermediate experienced in web design and development according to my skills.",
+        "Can create an amazing website for your business, Intermediate experienced in web design and development according to my skills.",
         "Active student Semester 7 Nusa Putra University Department Informatics Engineering, passionate individual and highly motivated in the world of Technology such as Web Developer, Developer Software. Able to work individually or work together in a team, work quickly. I`m  21 years old, have some skills enough to compete in today`s digital era, Back End Developer, Front End Developer, Microsoft Office. Looking for opportunities to develop my skills in the field of Web Developer both in the Frontend and Backend fields. Check my details below."
     ]
 }

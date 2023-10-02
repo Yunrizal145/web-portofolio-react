@@ -18,13 +18,13 @@ const Portfolio = () => {
 
 			{/* Portfolio Section */}
 			<div className="mx-10 mt-14 md:mx-20">
-				<div className="w-full lg:w-[1025px] lg:mx-auto">
+				<div className="w-full lg:w-[1250px] lg:mx-auto">
 					{/* Title of Portfolio */}
-					<div className="w-96">
-						<h2 className="text-2xl lg:text-3xl text-white font-bold">
+					<div className="w-96 lg:w-[550px]">
+						<h2 className="text-2xl lg:text-4xl text-white font-bold">
 							Completed Projects 👨‍💻
 						</h2>
-						<h4 className="text-sm mt-4 text-slate-300 lg:text-base lg:mt-6">
+						<h4 className="text-sm mt-4 text-slate-300 lg:text-lg lg:mt-6">
 							Is a collection of achievements and works that
 							depict my journey, reflecting abilities and
 							dedication in creative endeavors.
@@ -45,8 +45,10 @@ const Portfolio = () => {
 
 							{/* Desc Portfolio */}
 							<div className="lg:w-1/2 lg:mt-8 mx-10 mb-10 text-white">
-								<h2 className="text-3xl mb-6">Sertifikat</h2>
-								<h3 className="text-sm mb-8">
+								<h2 className="text-2xl mb-6 lg:text-4xl">
+									Sertifikat
+								</h2>
+								<h3 className="text-sm mb-8 lg:text-lg">
 									`A written recognition that states the
 									achievement, competence, or participation in
 									a program, course, or activity according to
@@ -71,8 +73,10 @@ const Portfolio = () => {
 						<div className="flex flex-col-reverse lg:flex-row lg:justify-between bg-emerald-500 rounded-2xl ">
 							{/* Desc Portfolio */}
 							<div className="lg:w-1/2 lg:mt-8 mx-10 mb-10 text-white">
-								<h2 className="text-3xl mb-6">Sertifikat</h2>
-								<h3 className="text-sm mb-8">
+								<h2 className="text-2xl mb-6 lg:text-4xl">
+									Sertifikat
+								</h2>
+								<h3 className="text-sm mb-8 lg:text-lg">
 									`A written recognition that states the
 									achievement, competence, or participation in
 									a program, course, or activity according to

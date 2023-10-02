@@ -12,7 +12,7 @@ const Footer = () => {
 				</h2>
 				<h4 className="text-xl">{role[0]} 👨‍💻 </h4>
 
-				<div className="lg:ml-20 lg:-mt-2">
+				<div className="lg:ml-36 lg:-mt-2">
 					<Icons />
 				</div>
 				<div className="text-xs mt-4 mb-14">

@@ -40,35 +40,39 @@ const Contact = () => {
 						</div>
 					</div>
 					<div className="flex justify-between my-8 lg:flex-col">
-						<div className="w-[150px] h-1 lg:w-1 lg:h-[150px] bg-[#00095d] rounded-full"></div>
+						<div className="w-[80px] h-1 lg:w-1 lg:h-[150px] bg-[#00095d] rounded-full"></div>
 						<div className="flex gap-2 -ml-3 -mt-3">
 							<span>O</span>
 							<span>R</span>
 						</div>
-						<div className="w-[150px] h-1 lg:w-1 lg:h-[150px] bg-[#00095d] rounded-full"></div>
+						<div className="w-[80px] h-1 lg:w-1 lg:h-[150px] bg-[#00095d] rounded-full"></div>
 					</div>
 					<div className="lg:w-1/3 lg:mt-14 ">
 						{/* Whatsapp */}
-						<div className="w-full p-4 bg-cyan-400 rounded-2xl flex gap-6">
+						<div className="w-full p-4 bg-cyan-400 rounded-2xl flex flex-col items-center lg:flex-row lg:gap-6">
 							<div className="w-20 p-4 bg-[#fff] rounded-full text-green-500 text-5xl">
 								<BsWhatsapp />
 							</div>
-							<div className="text-white pt-3">
-								<h2 className="font-bold text-lg">Whatsapp</h2>
-								<h4 className="text-sm text-slate-200">
+							<div className="text-white mt-4 lg:mt-0">
+								<h2 className="font-bold text-lg lg:text-xl">
+									Whatsapp
+								</h2>
+								<h4 className="text-sm lg:text-base text-slate-200 mt-2">
 									0882 - 9417 - 4402
 								</h4>
 							</div>
 						</div>
 
 						{/* Email */}
-						<div className="w-full p-4 bg-cyan-400 rounded-2xl flex gap-6 mt-14">
+						<div className="w-full p-4 bg-cyan-400 rounded-2xl flex flex-col items-center lg:flex-row lg:gap-6 mt-14">
 							<div className="w-20 p-4 bg-[#fff] rounded-full text-red-400 text-5xl">
 								<TfiEmail />
 							</div>
-							<div className="text-white pt-3">
-								<h2 className="font-bold text-lg">Mail</h2>
-								<h4 className="text-sm text-slate-200">
+							<div className="text-white mt-4 lg:mt-0">
+								<h2 className="font-bold text-lg lg:text-xl">
+									Mail
+								</h2>
+								<h4 className="text-sm lg:text-base text-slate-200 mt-2">
 									hamad.yunrizal@gmail.com
 								</h4>
 							</div>

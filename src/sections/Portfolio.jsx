@@ -20,8 +20,8 @@ const Portfolio = () => {
 			<div className="mx-10 mt-14 md:mx-20">
 				<div className="w-full lg:w-[1250px] lg:mx-auto">
 					{/* Title of Portfolio */}
-					<div className="w-96 lg:w-[550px]">
-						<h2 className="text-2xl lg:text-4xl text-white font-bold">
+					<div className="w-56 lg:w-[550px]">
+						<h2 className="text-xl lg:text-4xl text-white font-bold">
 							Completed Projects 👨‍💻
 						</h2>
 						<h4 className="text-sm mt-4 text-slate-300 lg:text-lg lg:mt-6">

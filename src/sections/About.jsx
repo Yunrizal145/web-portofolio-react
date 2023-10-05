@@ -22,7 +22,7 @@ const About = () => {
 					<img
 						src={profilePicture}
 						alt="Profile Picture"
-						className="w-80 h-80 lg:w-[500px] lg:h-[500px]"
+						className="w-72 h-72 lg:w-[500px] lg:h-[500px]"
 					/>
 				</div>
 

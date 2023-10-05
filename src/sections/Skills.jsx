@@ -22,7 +22,7 @@ const Skills = () => {
 						Tech Stack 🔨
 					</h3>
 					<div className="w-full h-1 bg-[#f6f9fc] mb-6 lg:mb-10 "></div>
-					<div className="w-full px-10 lg:px-14 mt-2 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-7 text-center">
+					<div className="w-full px-10 lg:px-14 mt-2 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 text-center">
 						{skillsSet.map(
 							({ IconSkill, skillName, title }, index) => (
 								<div key={index} className="mb-12 text-white">
@@ -55,7 +55,7 @@ const Skills = () => {
 							Tools 🔧
 						</h3>
 						<div className="w-full h-1 bg-[#f6f9fc] mb-4 "></div>
-						<div className="w-full px-14 py-4 mt-2 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 text-center">
+						<div className="w-full px-10 py-4 mt-2 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 text-center">
 							{toolsSet.map(
 								(
 									{ IconTools, toolsName, toolsTitle },

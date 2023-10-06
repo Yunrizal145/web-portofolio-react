@@ -5,17 +5,47 @@ import Typewriter from "typewriter-effect";
 import profilePict from "../assets/image/profile.png";
 import Icons from "./Icons";
 import { motion } from "framer-motion";
+import {
+	slideIn,
+	staggerContainer,
+	textVariants,
+	zoomIn,
+} from "../utils/motion";
 
 const Home = () => {
 	const { name, role, description } = identity;
 
 	return (
 		<div className="w-full text-center lg:text-left lg:flex lg:container lg:mx-auto ">
-			<motion.div className="md:mx-16 lg:w-1/2 lg:pl-28 lg:-mx-0 text-white ">
-				<p className="text-xl lg:text-2xl font-normal">Hi 👋,</p>
-				<h2 className="text-2xl lg:text-5xl font-bold"> {name} </h2>
-				<div className="mx-8 my-2 lg:-mx-0 lg:w-[550px] h-1 bg-[#FF4495] rounded-full mt-4 lg:mb-6"></div>
-				<div>
+			<motion.div
+				animate={{ y: [350, -50, 0] }}
+				viewport={{ once: true, amount: 0.25 }}
+				// initial={{ opacity: 0 }}
+				// whileInView={{ opacity: 1 }}
+				transition={{ ease: "easeOut", duration: 2 }}
+				variants={staggerContainer}
+				whileInView="show"
+				initial="hidden"
+				className="md:mx-16 lg:w-1/2 lg:pl-28 lg:-mx-0 text-white "
+			>
+				<motion.p
+					variants={slideIn("left", "tween", 0.1, 1)}
+					className="text-xl lg:text-2xl font-normal"
+				>
+					Hi 👋,
+				</motion.p>
+				<motion.h2
+					variants={textVariants(1.1)}
+					className="text-2xl lg:text-5xl font-bold"
+				>
+					{" "}
+					{name}{" "}
+				</motion.h2>
+				<motion.div
+					variants={textVariants(1.2)}
+					className="mx-8 my-2 lg:-mx-0 lg:w-[550px] h-1 bg-[#FF4495] rounded-full mt-4 lg:mb-6"
+				></motion.div>
+				<motion.div variants={textVariants(1.3)}>
 					<div className="text-2xl lg:text-4xl font-bold mb-2">
 						<span className="text-lg lg:text-2xl text-cyan-300">
 							I`m A
@@ -31,19 +61,23 @@ const Home = () => {
 					<p className="mx-14 text-sm mt-6 lg:text-xl lg:-mx-0 lg:w-[450px]">
 						{description[0]}
 					</p>
-				</div>
-				<div className="pb-4">
+				</motion.div>
+				<motion.div variants={textVariants(1.4)} className="pb-4">
 					<Icons />
-				</div>
-				<div className="mt-8 lg:-mt-0">
-					<a
+				</motion.div>
+				<motion.div
+					variants={zoomIn(1.5, 0.75)}
+					className="mt-8 lg:-mt-0"
+				>
+					<motion.a
 						href="#download"
+						variants={textVariants(1.5)}
 						className="px-6 py-3 text-base lg:text-xl bg-white shadow-md rounded-2xl text-[#FF4495] hover:bg-[#ff4495] hover:text-white hover:shadow-md hover:border-r-2 hover:border-b-2 hover:shadow-white hover:duration-500"
 					>
 						<FontAwesomeIcon icon={faDownload} className="pr-2" />
 						Curriculum Vitae
-					</a>
-				</div>
+					</motion.a>
+				</motion.div>
 			</motion.div>
 			{/* Foto Profile */}
 			<motion.div

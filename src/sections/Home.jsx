@@ -20,8 +20,6 @@ const Home = () => {
 			<motion.div
 				animate={{ y: [350, -50, 0] }}
 				viewport={{ once: true, amount: 0.25 }}
-				// initial={{ opacity: 0 }}
-				// whileInView={{ opacity: 1 }}
 				transition={{ ease: "easeOut", duration: 2 }}
 				variants={staggerContainer}
 				whileInView="show"

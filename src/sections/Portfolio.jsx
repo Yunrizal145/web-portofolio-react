@@ -1,5 +1,6 @@
 import SectionTitle from "../components/SectionTitle";
 import img1 from "../assets/image/sertif-kawah.png";
+import { motion } from "framer-motion";
 
 const Portfolio = () => {
 	console.log();
@@ -21,9 +22,9 @@ const Portfolio = () => {
 				<div className="w-full lg:w-[1250px] lg:mx-auto">
 					{/* Title of Portfolio */}
 					<div className="w-56 lg:w-[550px]">
-						<h2 className="text-xl lg:text-4xl text-white font-bold">
+						<motion.h2 className="text-xl lg:text-4xl text-white font-bold">
 							Completed Projects 👨‍💻
-						</h2>
+						</motion.h2>
 						<h4 className="text-sm mt-4 text-slate-300 lg:text-lg lg:mt-6">
 							Is a collection of achievements and works that
 							depict my journey, reflecting abilities and

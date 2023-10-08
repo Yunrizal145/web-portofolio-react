@@ -28,7 +28,7 @@ const Skills = () => {
 				className="container mx-auto mt-16"
 			>
 				<motion.div
-					variants={slideIn("right", "tween", 0.1, 1)}
+					variants={slideIn("bottom", "tween", 0.1, 1)}
 					className="mx-10 md:mx-20 lg:mx-32 bg-[#232f5a] rounded-3xl"
 				>
 					<motion.h3
@@ -39,7 +39,7 @@ const Skills = () => {
 					</motion.h3>
 					<div className="w-full h-1 bg-[#f6f9fc] mb-6 lg:mb-10 "></div>
 					<motion.div
-						variants={slideIn("left", "tween", 0.6, 2)}
+						variants={slideIn("bottom", "tween", 0.6, 2)}
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						className="w-full px-10 lg:px-14 mt-2 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 text-center"
@@ -116,7 +116,7 @@ const Skills = () => {
 						</motion.h3>
 						<div className="w-full h-1 bg-[#f6f9fc] mb-4 "></div>
 						<motion.div
-							variants={slideIn("left", "tween", 0.6, 2)}
+							variants={slideIn("bottom", "tween", 0.6, 2)}
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1 }}
 							className="w-full px-10 py-4 mt-2 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 text-center"

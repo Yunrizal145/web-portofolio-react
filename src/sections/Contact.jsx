@@ -3,6 +3,8 @@ import InputLabel from "../components/InputLabel";
 import TextareaField from "../components/TextareaField";
 import { BsWhatsapp } from "react-icons/bs";
 import { TfiEmail } from "react-icons/tfi";
+import { motion } from "framer-motion";
+import { slideIn, staggerContainer, textVariants } from "../utils/motion";
 
 const Contact = () => {
 	return (
@@ -16,18 +18,35 @@ const Contact = () => {
 			<div className="flex justify-center items-center">
 				<div className="w-[250px] h-1 bg-[#00095d] rounded-full mt-8"></div>
 			</div>
-			<div className="mx-10 md:mx-20 lg:mx-32 mt-12">
+			<motion.div
+				animate={{ y: [-350, 0] }}
+				viewport={{ once: true, amount: 0.25 }}
+				transition={{ ease: "easeOut", duration: 2 }}
+				variants={staggerContainer}
+				whileInView="show"
+				initial="hidden"
+				className="mx-10 md:mx-20 lg:mx-32 mt-12"
+			>
 				{/* Contact Title */}
-				<div className="w-full text-[#0095d]">
-					<h2 className="text-2xl font-bold">
+				<motion.div
+					variants={slideIn("bottom", "tween", 2, 1)}
+					className="w-full text-[#0095d]"
+				>
+					<motion.h2
+						variants={textVariants(1.1)}
+						className="text-2xl font-bold"
+					>
 						Contact me, if you want to discuss
-					</h2>
-					<h4 className="text-sm lg:text-base font-semibold text-slate-800">
+					</motion.h2>
+					<motion.h4
+						variants={textVariants(1.2)}
+						className="text-sm lg:text-base font-semibold text-slate-800"
+					>
 						I am always open to discuss website development,
 						cooperation or partnerships. Just contact me through the
 						media below.
-					</h4>
-				</div>
+					</motion.h4>
+				</motion.div>
 
 				{/* Contact Main Content */}
 				<div className="lg:flex lg:gap-10">
@@ -79,7 +98,7 @@ const Contact = () => {
 						</div>
 					</div>
 				</div>
-			</div>
+			</motion.div>
 		</div>
 	);
 };

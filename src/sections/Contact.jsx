@@ -50,52 +50,85 @@ const Contact = () => {
 
 				{/* Contact Main Content */}
 				<div className="lg:flex lg:gap-10">
-					<div className="lg:w-2/3">
+					<motion.div
+						variants={slideIn("left", "tween", 2, 1)}
+						className="lg:w-2/3"
+					>
 						<div className="mt-10">
 							<InputLabel label="Nama Lengkap" placeholder="" />
 							<InputLabel label="Email" placeholder="" />
 							<InputLabel label="Subject" placeholder="" />
 							<TextareaField label="Message" placeholder="" />
 						</div>
-					</div>
-					<div className="flex justify-between my-8 lg:flex-col">
+					</motion.div>
+					<motion.div
+						variants={slideIn("bottom", "tween", 2, 1)}
+						className="flex justify-between my-8 lg:flex-col"
+					>
 						<div className="w-[80px] h-1 lg:w-1 lg:h-[150px] bg-[#00095d] rounded-full"></div>
-						<div className="flex gap-2 -ml-3 -mt-3">
+						<motion.div
+							variants={textVariants(1.1)}
+							className="flex gap-2 -ml-3 -mt-3"
+						>
 							<span>O</span>
 							<span>R</span>
-						</div>
+						</motion.div>
 						<div className="w-[80px] h-1 lg:w-1 lg:h-[150px] bg-[#00095d] rounded-full"></div>
-					</div>
+					</motion.div>
 					<div className="lg:w-1/3 lg:mt-14 ">
 						{/* Whatsapp */}
-						<div className="w-full p-4 bg-cyan-400 rounded-2xl flex flex-col items-center lg:flex-row lg:gap-6">
-							<div className="w-20 p-4 bg-[#fff] rounded-full text-green-500 text-5xl">
+						<motion.div
+							variants={slideIn("bottom", "tween", 2, 1)}
+							className="w-full p-4 bg-cyan-400 rounded-2xl flex flex-col items-center lg:flex-row lg:gap-6"
+						>
+							<motion.div
+								variants={textVariants(1.1)}
+								className="w-20 p-4 bg-[#fff] rounded-full text-green-500 text-5xl"
+							>
 								<BsWhatsapp />
-							</div>
+							</motion.div>
 							<div className="text-white mt-4 lg:mt-0">
-								<h2 className="font-bold text-lg lg:text-xl">
+								<motion.h2
+									variants={textVariants(1.2)}
+									className="font-bold text-lg lg:text-xl"
+								>
 									Whatsapp
-								</h2>
-								<h4 className="text-sm lg:text-base text-slate-200 mt-2">
+								</motion.h2>
+								<motion.h4
+									variants={textVariants(1.3)}
+									className="text-sm lg:text-base text-slate-200 mt-2"
+								>
 									0882 - 9417 - 4402
-								</h4>
+								</motion.h4>
 							</div>
-						</div>
+						</motion.div>
 
 						{/* Email */}
-						<div className="w-full p-4 bg-cyan-400 rounded-2xl flex flex-col items-center lg:flex-row lg:gap-6 mt-14">
-							<div className="w-20 p-4 bg-[#fff] rounded-full text-red-400 text-5xl">
+						<motion.div
+							variants={slideIn("bottom", "tween", 2, 1)}
+							className="w-full p-4 bg-cyan-400 rounded-2xl flex flex-col items-center lg:flex-row lg:gap-6 mt-14"
+						>
+							<motion.div
+								variants={textVariants(1.1)}
+								className="w-20 p-4 bg-[#fff] rounded-full text-red-400 text-5xl"
+							>
 								<TfiEmail />
-							</div>
+							</motion.div>
 							<div className="text-white mt-4 lg:mt-0">
-								<h2 className="font-bold text-lg lg:text-xl">
+								<motion.h2
+									variants={textVariants(1.2)}
+									className="font-bold text-lg lg:text-xl"
+								>
 									Mail
-								</h2>
-								<h4 className="text-sm lg:text-base text-slate-200 mt-2">
+								</motion.h2>
+								<motion.h4
+									variants={textVariants(1.3)}
+									className="text-sm lg:text-base text-slate-200 mt-2"
+								>
 									hamad.yunrizal@gmail.com
-								</h4>
+								</motion.h4>
 							</div>
-						</div>
+						</motion.div>
 					</div>
 				</div>
 			</motion.div>

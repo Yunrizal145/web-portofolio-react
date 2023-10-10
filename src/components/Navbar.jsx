@@ -32,14 +32,6 @@ const Navbar = () => {
 				<ul className="block lg:flex justify-end">
 					<li className="group">
 						<a
-							href="#"
-							className="mx-4 flex py-3 text-white text-xl font-bold lg:text-2xl hover:text-[#FF4495] hover:-translate-y-1 hover:duration-500"
-						>
-							Home
-						</a>
-					</li>
-					<li className="group">
-						<a
 							href="#about"
 							className="mx-4 flex py-3 text-white text-xl font-bold lg:text-2xl hover:text-[#FF4495] hover:-translate-y-1 hover:duration-500"
 						>

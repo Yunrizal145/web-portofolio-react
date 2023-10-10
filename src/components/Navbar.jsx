@@ -16,7 +16,7 @@ const Navbar = () => {
 				type="button"
 				className={`hamburger ${
 					isHamburgerClicked ? "hamburger-click" : ""
-				} block absolute right-4 mr-8 lg:hidden`}
+				} absolute right-4 mr-8 lg:hidden`}
 				onClick={handleHamburgerClick}
 			>
 				<span className=" hamburger-costum transition duration-300 ease-in-out origin-top-right"></span>
@@ -27,7 +27,7 @@ const Navbar = () => {
 				id="navbar"
 				className={`navbar ${
 					isNavbarHidden ? "hidden" : ""
-				} hidden w-full absolute py-4 shadow-lg rounded-lg top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none mt-2`}
+				} w-full absolute py-4 shadow-lg rounded-bl-lg rounded-br-lg top-full lg:flex lg:justify-end lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none mt-2`}
 			>
 				<ul className="block lg:flex justify-end">
 					<li className="group">

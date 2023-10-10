@@ -17,6 +17,10 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+.navbar{
+    @apply bg-[#00095d] left-0 pl-5 -mt-5 lg:-mt-0;
+}
+
 .hamburger-costum {
     @apply w-[30px] h-[2px] my-2 block bg-white;
 }

@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
 import SectionTitle from "../components/SectionTitle";
 import img1 from "../assets/image/sertif-kawah.png";
 import { motion } from "framer-motion";
+import { descPortfolio } from "../constants/data";
 import {
 	slideIn,
 	staggerContainer,
@@ -9,7 +11,6 @@ import {
 } from "../utils/motion";
 
 const Portfolio = () => {
-	console.log();
 	return (
 		<div className="container mx-auto">
 			{/* Portfolio Title */}
@@ -84,20 +85,19 @@ const Portfolio = () => {
 									variants={textVariants(1.1)}
 									className="text-2xl mb-6 lg:text-4xl"
 								>
-									Sertifikat
+									Sertificate
 								</motion.h2>
 								<motion.h3
 									variants={textVariants(1.2)}
 									className="text-sm mb-8 lg:text-lg"
 								>
-									`A written recognition that states the
-									achievement, competence, or participation in
-									a program, course, or activity according to
-									predetermined criteria. A written
-									recognition that states the achievement,
-									competence, or participation in a program,
-									course, or activity according to
-									predetermined criteria. `
+									`Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Impedit cupiditate fuga
+									ipsum labore architecto quas nam commodi,
+									asperiores quo! Perspiciatis, rerum
+									molestiae accusantium error esse
+									reprehenderit neque. Sapiente, reprehenderit
+									quos.`
 								</motion.h3>
 								<motion.div
 									variants={textVariants(1.3)}

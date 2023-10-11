@@ -4,6 +4,7 @@ import {
     SiFigma, SiIntellijidea, SiXampp, SiPostman, SiAndroidstudio
 } from "react-icons/si";
 import {FaJava} from "react-icons/fa";
+import Porto1 from "../assets/image/porto1.png";
 
 export const identity = {
     name: "Hammad Yunrizal Aushaf",
@@ -163,13 +164,10 @@ export const descTechAndTools = {
 
 export const descPortfolio = [
     {
-        imgPorto: "",
-        namePorto: "",
-        descPorto: ""
-    },
-    {
-        imgPorto: "",
-        namePorto: "",
-        descPorto: ""
-    },
+        imgPorto: Porto1,
+        namePorto: "Landing Page Seduiten",
+        descPorto: "Seduiten is a landing page website in the finance sector created using HTML and Tailwindcss technology",
+        TechStack: {SiHtml5, SiTailwindcss},
+        linkPorto: "https://yunrizal145.github.io/Homepage_Finance/seduiten.html"
+    }
 ]

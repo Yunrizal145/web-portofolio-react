@@ -97,7 +97,7 @@ const Portfolio = () => {
 									</motion.h3>
 									<motion.div
 										variants={textVariants(1.3)}
-										className="w-44 px-6 py-3 bg-[#ff4495] mb-4 rounded-2xl"
+										className="px-6 py-3 border-2 mb-4 rounded-2xl"
 									>
 										<div className="flex gap-4 items-center">
 											{item.TechStack.map(

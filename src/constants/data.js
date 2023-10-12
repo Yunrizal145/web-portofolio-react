@@ -167,7 +167,7 @@ export const descPortfolio = [
         imgPorto: Porto1,
         namePorto: "Landing Page Seduiten",
         descPorto: "Seduiten is a landing page website in the finance sector created using HTML and Tailwindcss technology",
-        TechStack: {SiHtml5, SiTailwindcss},
+        TechStack: [SiHtml5, SiTailwindcss],
         linkPorto: "https://yunrizal145.github.io/Homepage_Finance/seduiten.html"
     }
 ]

@@ -63,61 +63,76 @@ const Portfolio = () => {
 						className="mt-8 w-full"
 					>
 						{/* Main Content Portfolio Left */}
-						<motion.div
-							variants={slideIn("bottom", "tween", 2, 1)}
-							className="flex flex-col lg:flex-row lg:justify-between bg-blue-500 rounded-2xl mb-10"
-						>
-							{/* IMG Portfolio */}
+						{descPortfolio.map((item, index) => (
 							<motion.div
-								variants={zoomIn(1.5, 0.75)}
-								className="lg:w-1/2 flex justify-center m-10 rounded-2xl overflow-hidden"
+								key={index}
+								variants={slideIn("bottom", "tween", 2, 1)}
+								className="flex flex-col lg:flex-row lg:justify-between bg-blue-500 rounded-2xl mb-10"
 							>
-								<img
-									src={img1}
-									alt="Sertif"
-									className="w-[432px]"
-								/>
-							</motion.div>
-
-							{/* Desc Portfolio */}
-							<div className="lg:w-1/2 lg:mt-8 mx-10 mb-10 text-white">
-								<motion.h2
-									variants={textVariants(1.1)}
-									className="text-2xl mb-6 lg:text-4xl"
-								>
-									Sertificate
-								</motion.h2>
-								<motion.h3
-									variants={textVariants(1.2)}
-									className="text-sm mb-8 lg:text-lg"
-								>
-									`Lorem ipsum dolor sit amet consectetur
-									adipisicing elit. Impedit cupiditate fuga
-									ipsum labore architecto quas nam commodi,
-									asperiores quo! Perspiciatis, rerum
-									molestiae accusantium error esse
-									reprehenderit neque. Sapiente, reprehenderit
-									quos.`
-								</motion.h3>
-								<motion.div
-									variants={textVariants(1.3)}
-									className="w-44 px-6 py-3 bg-[#ff4495] mb-4 rounded-2xl"
-								>
-									Tech Stack In Use
-								</motion.div>
+								{/* IMG Portfolio */}
 								<motion.div
 									variants={zoomIn(1.5, 0.75)}
-									className="mt-8"
+									className="lg:w-1/2 flex justify-center m-10 rounded-2xl overflow-hidden"
 								>
-									<motion.button
-										variants={textVariants(1.4)}
-										className="w-full px-6 py-2 bg-[#00095d] text-center rounded-3xl"
-									>
-										See Details
-									</motion.button>
+									<img
+										src={item.imgPorto}
+										alt="Sertif"
+										className="w-[432px]"
+									/>
 								</motion.div>
-							</div>
-						</motion.div>
+
+								{/* Desc Portfolio */}
+								<div className="lg:w-1/2 lg:mt-8 mx-10 mb-10 text-white">
+									<motion.h2
+										variants={textVariants(1.1)}
+										className="text-2xl mb-6 lg:text-4xl"
+									>
+										{item.namePorto}
+									</motion.h2>
+									<motion.h3
+										variants={textVariants(1.2)}
+										className="text-sm mb-8 lg:text-lg"
+									>
+										`{item.descPorto}`
+									</motion.h3>
+									<motion.div
+										variants={textVariants(1.3)}
+										className="w-44 px-6 py-3 bg-[#ff4495] mb-4 rounded-2xl"
+									>
+										<div className="flex gap-4 items-center">
+											{item.TechStack.map(
+												(Icon, techIndex) => (
+													<div
+														key={techIndex}
+														className=""
+													>
+														<Icon size={24} />{" "}
+													</div>
+												)
+											)}
+										</div>
+									</motion.div>
+									<motion.div
+										variants={zoomIn(1.5, 0.75)}
+										className="mt-8"
+									>
+										<motion.button
+											variants={textVariants(1.4)}
+											className="w-full bg-[#00095d] text-center rounded-3xl"
+										>
+											<a
+												href={item.linkPorto}
+												target="_blank"
+												className="w-full px-8 py-3 text-center rounded-3xl block text-white"
+												rel="noreferrer"
+											>
+												See Details
+											</a>
+										</motion.button>
+									</motion.div>
+								</div>
+							</motion.div>
+						))}
 
 						{/* Main Content Portfolio Right */}
 						<motion.div

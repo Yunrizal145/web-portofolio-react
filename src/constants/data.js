@@ -6,6 +6,7 @@ import {
 import {FaJava} from "react-icons/fa";
 import Porto1 from "../assets/image/porto1.png";
 import Porto2 from "../assets/image/porto2.png";
+import Porto3 from "../assets/image/porto3.png";
 
 export const identity = {
     name: "Hammad Yunrizal Aushaf",
@@ -177,5 +178,12 @@ export const descPortfolio = [
         descPorto: "Food Landing Page is a landing page website in the FnB sector created using with React Js + Vite and Tailwindcss technology",
         TechStack: [SiReact, SiVite, SiTailwindcss],
         linkPorto: "https://food-landing-page-silk.vercel.app/"
+    },
+    {
+        imgPorto: Porto3,
+        namePorto: "Personal Website",
+        descPorto: "Personal Website is an individual's online platform to showcase their skills, achievements, and portfolio. created using with React Js + Vite and Tailwindcss technology",
+        TechStack: [SiReact, SiVite, SiTailwindcss],
+        linkPorto: ""
     }
 ]

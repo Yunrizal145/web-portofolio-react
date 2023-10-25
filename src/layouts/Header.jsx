@@ -16,7 +16,7 @@ const Header = () => {
 			className={`w-full fixed z-20 ${
 				scrolled
 					? "bg-opacity-30 bg-gray-700 backdrop-blur-md h-16 -mt-3 lg:h-28"
-					: "bg-[#00095D]"
+					: "bg-[#36454F]"
 			} transition-all duration-500`}
 		>
 			<motion.div

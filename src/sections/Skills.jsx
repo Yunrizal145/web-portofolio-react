@@ -29,7 +29,7 @@ const Skills = () => {
 			>
 				<motion.div
 					variants={slideIn("bottom", "tween", 0.1, 1)}
-					className="mx-10 md:mx-20 lg:mx-32 bg-[#232f5a] rounded-3xl"
+					className="mx-10 md:mx-20 lg:mx-32 bg-[#36454f] rounded-3xl"
 				>
 					<motion.h3
 						variants={textVariants(1.1)}
@@ -46,16 +46,21 @@ const Skills = () => {
 					>
 						{skillsSet.map(
 							({ IconSkill, skillName, title }, index) => (
-								<div key={index} className="mb-12 text-white">
+								<div
+									key={index}
+									className="mb-12 text-white group relative md:mx-4 lg:mx-6"
+								>
 									<motion.div
 										variants={textVariants(1.6)}
-										className="w-[50px] mx-auto flex justify-center text-2xl py-3 mb-2 rounded-full bg-[#00095d] drop-shadow-xl border hover:-translate-y-3 hover:duration-300"
+										className="w-[50px] mx-auto flex justify-center text-2xl py-3 mb-2 rounded-full bg-[#49718b] drop-shadow-xl border duration-300"
 									>
-										<IconSkill />
+										<div className="group-hover:-translate-y-5 transition-transform">
+											<IconSkill />
+										</div>
 									</motion.div>
 									<motion.h3
 										variants={textVariants(1.7)}
-										className="text-xs lg:text-lg"
+										className="text-xs lg:text-lg text-[#FFD700] font-bold"
 									>
 										{skillName}
 									</motion.h3>
@@ -80,7 +85,7 @@ const Skills = () => {
 						variants={staggerContainer}
 						whileInView="show"
 						initial="hidden"
-						className="mx-10 md:mx-20 mb-10 lg:-mx-0 lg:w-1/3 font-bold pt-10 text-[#00095d] bg-white h-72 shadow-[#00095d] shadow-2xl p-8 rounded-2xl"
+						className="mx-10 md:mx-20 mb-10 lg:-mx-0 lg:w-1/3 font-bold pt-10 text-[#36454f] bg-white h-72 shadow-[#36454f] shadow-2xl p-8 rounded-2xl"
 					>
 						<motion.h2
 							variants={textVariants(1.6)}
@@ -90,7 +95,7 @@ const Skills = () => {
 						</motion.h2>
 						<motion.div
 							variants={textVariants(1.7)}
-							className="w-full h-1 bg-[#00095d] mt-4 "
+							className="w-full h-1 bg-[#36454f] mt-4 rounded-full"
 						></motion.div>
 						<motion.p
 							variants={textVariants(1.8)}
@@ -106,7 +111,7 @@ const Skills = () => {
 						variants={staggerContainer}
 						whileInView="show"
 						initial="hidden"
-						className="lg:w-3/5 mx-10 md:mx-20 lg:-mx-0 bg-[#232f5a] rounded-3xl"
+						className="lg:w-3/5 mx-10 md:mx-20 lg:-mx-0 bg-[#36454f] rounded-3xl"
 					>
 						<motion.h3
 							variants={textVariants(1.1)}
@@ -128,17 +133,19 @@ const Skills = () => {
 								) => (
 									<div
 										key={index}
-										className="mb-8 text-white "
+										className="mb-8 text-white group relative md:mx-4 lg:mx-6"
 									>
 										<motion.div
 											variants={textVariants(1.6)}
-											className="w-[50px] mx-auto flex justify-center text-2xl py-3 mb-2 rounded-full bg-[#00095d] drop-shadow-xl border hover:-translate-y-3 hover:duration-300"
+											className="w-[50px] mx-auto flex justify-center text-2xl py-3 mb-2 rounded-full bg-[#49718b] drop-shadow-xl border hover:-translate-y-3 hover:duration-300"
 										>
-											<IconTools />
+											<div className="group-hover:-translate-y-5 transition-transform">
+												<IconTools />
+											</div>
 										</motion.div>
 										<motion.h3
 											variants={textVariants(1.7)}
-											className="text-xs lg:text-lg"
+											className="text-xs lg:text-lg text-[#FFD700] font-bold"
 										>
 											{toolsName}
 										</motion.h3>

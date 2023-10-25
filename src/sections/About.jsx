@@ -53,14 +53,14 @@ const About = () => {
 						variants={textVariants(1.1)}
 						className="text-2xl lg:text-4xl font-bold "
 					>
-						I`am <span className="text-[#00095D]">{name}</span>
+						I`am <span className="text-[#FFD700]">{name}</span>
 					</motion.h2>
 					<motion.h3
 						variants={textVariants(1.2)}
 						className="text-xl lg:text-3xl font-bold pt-3 pb-6"
 					>
 						A{" "}
-						<span className="text-[#00095D]">
+						<span className="text-[#FFD700]">
 							{role[0]}😎, Indonesian
 						</span>
 					</motion.h3>
@@ -72,7 +72,7 @@ const About = () => {
 					</motion.p>
 					<motion.div
 						variants={textVariants(1.4)}
-						className="w-full h-1 bg-[#FF4495] rounded-full my-6"
+						className="w-full h-1 bg-[#36454f] rounded-full my-6"
 					></motion.div>
 
 					{/* About Experience */}
@@ -83,11 +83,11 @@ const About = () => {
 						{aboutExperiences.map(({ number, title }, index) => (
 							<div
 								key={index}
-								className="w-52 px-6 py-14 lg:py-8 lg:px-8 font-bold rounded-3xl bg-[#00095d] bg-opacity-60 border-[#00095d] border-b-4 border-r-4 shadow-2xl hover:bg-[#ff4495]"
+								className="w-52 px-6 py-14 lg:py-8 lg:px-8 font-bold rounded-3xl bg-[#36454f] bg-opacity-60 border-[#FFD700] border-b-4 border-r-4 shadow-2xl hover:bg-[#FFD700]"
 							>
 								<h2 className="text-xl">{number} +</h2>
 								<div className="flex justify-center items-center mb-4 mt-1">
-									<div className="w-[100px] h-1 bg-[#00095d] rounded-full "></div>
+									<div className="w-[100px] h-1 bg-[#36454f] rounded-full "></div>
 								</div>
 								<span className="text-base">{title}</span>
 							</div>
@@ -102,7 +102,7 @@ const About = () => {
 						<motion.a
 							href="#"
 							variants={textVariants(1.5)}
-							className="btn-contact px-6 py-3 text-[#f6f9fc] text-base bg-[#FF4495] rounded-2xl duration-500 lg:text-xl hover:bg-[#00095d]  hover:border-r-2 hover:border-b-2 hover:border-[#FF4495] hover:shadow-md hover:shadow-[#FF4495]"
+							className="btn-contact px-6 py-3 text-[#f6f9fc] text-base bg-[#FFD700] rounded-2xl duration-500 lg:text-xl hover:bg-[#36454f] hover:border-r-2 hover:border-b-2 hover:border-[#FFD700] hover:shadow-md hover:shadow-[#FFD700]"
 						>
 							Lets Talk
 							<FontAwesomeIcon

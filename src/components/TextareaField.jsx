@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // eslint-disable-next-line react/prop-types
-const TextareaField = ({ label, placeholder }) => {
+const TextareaField = ({ name, label, placeholder }) => {
 	const [textareaValue, setTextareaValue] = useState("");
 
 	const handleTextareaChange = (event) => {
@@ -18,6 +18,7 @@ const TextareaField = ({ label, placeholder }) => {
 				value={textareaValue}
 				onChange={handleTextareaChange}
 				placeholder={placeholder}
+				name={name}
 			/>
 			<label htmlFor="textareaField" className="input-label">
 				{label}

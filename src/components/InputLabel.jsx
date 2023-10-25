@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // eslint-disable-next-line react/prop-types
-const InputLabel = ({ label, placeholder }) => {
+const InputLabel = ({ name, label, placeholder }) => {
 	const [inputValue, setInputValue] = useState("");
 
 	const handleInputChange = (event) => {
@@ -17,6 +17,7 @@ const InputLabel = ({ label, placeholder }) => {
 				value={inputValue}
 				onChange={handleInputChange}
 				placeholder={placeholder}
+				name={name}
 			/>
 			<label htmlFor="inputField" className="input-label">
 				{label}

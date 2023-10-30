@@ -190,7 +190,7 @@ export const descPortfolio = [
     {
         imgPorto: Porto4,
         namePorto: "Interior Landing Page",
-        descPorto: "Interior Landing Page is a landing page website to Discover the perfect landing page for your interior design needs. Browse our collection of stylish and functional furniture and decor, created using with React J + Vite and Tailwindcss",
+        descPorto: "Interior Landing Page is a landing page website to Discover the perfect landing page for your interior design needs. Browse our collection of stylish and functional furniture and decor, created using with React Js + Vite and Tailwindcss",
         TechStack: [SiReact, SiVite, SiTailwindcss],
         linkPorto: "https://interior-landing-page-neon.vercel.app/"
     },

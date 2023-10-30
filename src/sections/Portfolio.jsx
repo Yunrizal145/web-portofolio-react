@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import SectionTitle from "../components/SectionTitle";
-import img1 from "../assets/image/sertif-kawah.png";
 import { motion } from "framer-motion";
 import { descPortfolio } from "../constants/data";
 import {
@@ -9,6 +8,15 @@ import {
 	textVariants,
 	zoomIn,
 } from "../utils/motion";
+
+// Swiper Core
+import { Navigation, Pagination, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Swiper Styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const Portfolio = () => {
 	return (
@@ -21,7 +29,7 @@ const Portfolio = () => {
 				<SectionTitle textColor="#ffffff">Portfolio</SectionTitle>
 			</div>
 			<div className="flex justify-center items-center">
-				<div className="w-[250px] h-1 bg-[#FFD700] rounded-full mt-8"></div>
+				<div className="w-[250px] h-1 bg-[#FFD700] rounded-full mt-8" />
 			</div>
 
 			{/* Portfolio Section */}
@@ -45,7 +53,7 @@ const Portfolio = () => {
 						</motion.h2>
 						<motion.h4
 							variants={textVariants(1.2)}
-							className="text-sm mt-4 text-slate-300 lg:text-lg lg:mt-6"
+							className="text-sm mt-4 mb-6 text-slate-300 lg:text-lg lg:mt-6"
 						>
 							Is a collection of achievements and works that
 							depict my journey, reflecting abilities and
@@ -62,74 +70,94 @@ const Portfolio = () => {
 						initial="hidden"
 						className="mt-8 w-full"
 					>
-						{/* Main Content Portfolio Left */}
-						{descPortfolio.map((item, index) => (
-							<motion.div
-								key={index}
-								variants={slideIn("bottom", "tween", 2, 1)}
-								className="flex flex-col lg:flex-row lg:justify-between bg-[#49718b] rounded-2xl mb-10"
-							>
-								{/* IMG Portfolio */}
-								<motion.div
-									variants={zoomIn(1.5, 0.75)}
-									className="lg:w-1/2 flex justify-center m-10 rounded-2xl overflow-hidden"
-								>
-									<img
-										src={item.imgPorto}
-										alt="Sertif"
-										className="w-[432px] md:w-full"
-									/>
-								</motion.div>
-
-								{/* Desc Portfolio */}
-								<div className="lg:w-1/2 lg:mt-8 mx-10 mb-10 text-white">
-									<motion.h2
-										variants={textVariants(1.1)}
-										className="text-2xl mb-6 lg:text-4xl text-[#FFD700] font-bold"
-									>
-										{item.namePorto}
-									</motion.h2>
-									<motion.h3
-										variants={textVariants(1.2)}
-										className="text-sm mb-8 lg:text-lg"
-									>
-										`{item.descPorto}`
-									</motion.h3>
+						<Swiper
+							modules={[Navigation, Pagination, A11y]}
+							spaceBetween={50}
+							slidesPerView={1}
+							navigation
+							pagination={{ clickable: true }}
+							onSwiper={(swiper) => console.log(swiper)}
+							onSlideChange={() => console.log("slide change")}
+						>
+							{/* Main Content Portfolio Left */}
+							{descPortfolio.map((item, index) => (
+								<SwiperSlide key={index}>
 									<motion.div
-										variants={textVariants(1.3)}
-										className="px-6 py-3 border-2 mb-4 rounded-2xl"
+										variants={slideIn(
+											"bottom",
+											"tween",
+											2,
+											1
+										)}
+										className="flex flex-col md:mx-4 lg:mx-12 lg:flex-row lg:justify-between bg-[#49718b] rounded-2xl mb-10"
 									>
-										<div className="flex gap-4 items-center">
-											{item.TechStack.map(
-												(Icon, techIndex) => (
-													<div key={techIndex}>
-														<Icon size={24} />{" "}
-													</div>
-												)
-											)}
+										{/* IMG Portfolio */}
+										<motion.div
+											variants={zoomIn(1.5, 0.75)}
+											className="lg:w-1/2 flex justify-center m-10 rounded-2xl overflow-hidden"
+										>
+											<img
+												src={item.imgPorto}
+												alt="Sertif"
+												className="w-[432px] md:w-full"
+											/>
+										</motion.div>
+
+										{/* Desc Portfolio */}
+										<div className="lg:w-1/2 lg:mt-8 mx-10 mb-10 text-white">
+											<motion.h2
+												variants={textVariants(1.1)}
+												className="text-xl mb-6 md:text-2xl lg:text-4xl text-[#FFD700] font-bold"
+											>
+												{item.namePorto}
+											</motion.h2>
+											<motion.h3
+												variants={textVariants(1.2)}
+												className="text-xs mb-8 md:text-sm lg:text-lg"
+											>
+												`{item.descPorto}`
+											</motion.h3>
+											<motion.div
+												variants={textVariants(1.3)}
+												className="px-6 py-3 border-2 mb-4 rounded-2xl"
+											>
+												<div className="flex gap-4 items-center">
+													{item.TechStack.map(
+														(Icon, techIndex) => (
+															<div
+																key={techIndex}
+															>
+																<Icon
+																	size={24}
+																/>{" "}
+															</div>
+														)
+													)}
+												</div>
+											</motion.div>
+											<motion.div
+												variants={zoomIn(1.5, 0.75)}
+												className="mt-8"
+											>
+												<motion.button
+													variants={textVariants(1.4)}
+													className="w-full bg-[#FFD700] text-center rounded-3xl border border-[#FFD700] hover:bg-transparent duration-300"
+												>
+													<a
+														href={item.linkPorto}
+														target="_blank"
+														className="w-full px-8 py-3 text-center rounded-3xl block text-white font-bold hover:text-[#FFD700]"
+														rel="noreferrer"
+													>
+														See Details
+													</a>
+												</motion.button>
+											</motion.div>
 										</div>
 									</motion.div>
-									<motion.div
-										variants={zoomIn(1.5, 0.75)}
-										className="mt-8"
-									>
-										<motion.button
-											variants={textVariants(1.4)}
-											className="w-full bg-[#FFD700] text-center rounded-3xl border border-[#FFD700] hover:bg-transparent duration-300"
-										>
-											<a
-												href={item.linkPorto}
-												target="_blank"
-												className="w-full px-8 py-3 text-center rounded-3xl block text-white font-bold hover:text-[#FFD700]"
-												rel="noreferrer"
-											>
-												See Details
-											</a>
-										</motion.button>
-									</motion.div>
-								</div>
-							</motion.div>
-						))}
+								</SwiperSlide>
+							))}
+						</Swiper>
 					</motion.div>
 				</div>
 			</div>
